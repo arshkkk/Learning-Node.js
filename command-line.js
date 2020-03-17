@@ -3,7 +3,7 @@
 
 // This holds the arguments passed to file while running
 // process.argv
-// console.log(process.argv);
+console.log(process.argv);
 
 // To Reduce the Array to Single Element and Summing Up all customElements
 const arguments = process.argv.slice(2);
