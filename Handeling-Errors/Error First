@@ -1,0 +1,4 @@
+No tRy catch is used instead 
+callbacks are used first argument err is used
+and processed for finding erros before performing any operationn and 
+we can terminate callback using return keyword

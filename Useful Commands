@@ -1,0 +1,8 @@
+//To check file description
+ls -lh `File Name`
+
+// Replacing some characters from string
+string.replace("to replace", "with");
+
+//Checking if a file is present
+fs.existsSync('full path');
