@@ -6,3 +6,24 @@ string.replace("to replace", "with");
 
 //Checking if a file is present
 fs.existsSync('full path');
+
+//We can use OR in variables assignment
+const author = process.argv[2]||'unknown';
+
+//To repeat a string
+'string'.repeat( NumberOfTimes );
+
+//To remove whole dir with files
+rm -rf dir-name
+
+//Semantic Versioning
+^1.19.0 ---> Only Minor versin are installed
+~1.19.0 ---> Only Patches are Installed
+
+//using .gitignore
+echo node_modules > .gitignore
+
+//Useful node_modules
+Chalk //Highlighting Text on Terminal
+Axios //Handeling Api's
+Commander //Interacting with command line arguments
