@@ -1,0 +1,27 @@
+//For getting ejs reference===> views
+
+//For getting routes reference===> routes
+
+//For getting query reference ===> routes
+
+//All routes are assembled in app.js
+
+//we can specifiy urls in routes as well as in app.js
+but specifying in app.js makes work a lot easier and less dirty 
+
+
+//Query and Params
+Hello.js && hello.ejs
+
+//ejs Templating with loops and if else
+ index.js with ejs routes and ejs-example
+ <%=   is used for simple conversion to string
+ <%-   is treated as html content as shown as html
+
+//To Divide and Add ejs small part files in ejs files
+<%include ./filename %>
+
+//To render a custom 404 page
+After handeling all routes go to last app.use Add:-
+res.status(404).render('404');
+and create 404 template

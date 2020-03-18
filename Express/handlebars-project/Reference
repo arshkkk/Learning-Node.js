@@ -1,0 +1,36 @@
+//If you don't want your render method to render through layout.hbs(default layout)
+// then use---->
+  res.render('hbsexample', { title: 'Express hbs',layout:false });
+
+You can specify what layout you want to use as part of the render call. If you create a new layout called other.hbs, you can then do something like:
+
+res.render('view', { title: 'my other page', layout: 'other' });
+
+To override this for the entire application, you can use:
+
+app.set('view options', { layout: 'other' });
+
+{{}}---> content as it is and used for loops and statements
+{{{}}}---> used to treat content as html 
+//If Statement
+{{#showTitle}}
+{{{title}}}
+{{/showTitle}}
+
+//If Else Statement
+{{#if showTitle}}
+{{{title}}}
+{{else}}
+<h1>No Title Given</h1>
+{{/if}}
+
+//Looping
+{{#each data}}
+<li>{{this}}</li>
+{{/each}}
+
+
+//To render a custom 404 page
+After handeling all routes go to last app.use Add:-
+res.status(404).render('404');
+and create 404 template

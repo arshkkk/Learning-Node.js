@@ -27,3 +27,7 @@ echo node_modules > .gitignore
 Chalk //Highlighting Text on Terminal
 Axios //Handeling Api's
 Commander //Interacting with command line arguments
+
+//For Installing
+Express-Generator
+sudo npm install express-generator
