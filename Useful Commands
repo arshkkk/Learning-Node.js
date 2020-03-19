@@ -17,17 +17,24 @@ const author = process.argv[2]||'unknown';
 rm -rf dir-name
 
 //Semantic Versioning
-^1.19.0 ---> Only Minor versin are installed
-~1.19.0 ---> Only Patches are Installed
+	^1.19.0 ---> Only Minor versin are installed
+	~1.19.0 ---> Only Patches are Installed
 
 //using .gitignore
 echo node_modules > .gitignore
 
 //Useful node_modules
-Chalk //Highlighting Text on Terminal
-Axios //Handeling Api's
-Commander //Interacting with command line arguments
+	Chalk //Highlighting Text on Terminal
+	Axios //Handeling Api's
+	Commander //Interacting with command line arguments
 
 //For Installing
-Express-Generator
-sudo npm install express-generator
+	//Express-Generator
+	sudo npm install express-generator
+
+	//Express-Session
+	sudo npm install express-session
+
+//For Killing a Process at certain Port ( Ex. 3000 )
+lsof -ti:3000 | xargs kill
+
