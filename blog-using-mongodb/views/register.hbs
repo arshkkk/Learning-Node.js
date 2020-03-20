@@ -1,0 +1,21 @@
+{{#each error}}
+<h4>{{this}}</h4>
+{{/each}}
+
+{{#each success}}
+<h4>{{this}}</h4>
+{{/each}}
+
+<form action="/register" method="POST">
+<label>
+    Username
+    <input type ="text" name="username">
+</label>
+
+<label>
+    Password
+    <input type="password" name="password">
+</label>
+
+<button>Signup</button>
+</form>
